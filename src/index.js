@@ -12,4 +12,4 @@ const chars = {
 const re = new RegExp(Object.keys(chars).join("|"), "g");
 
 // Return the escaped string
-export default str => String(str).replace(re, match => chars[match]);
+export default str => (str != null) ? String(str).replace(re, match => chars[match]) : "";

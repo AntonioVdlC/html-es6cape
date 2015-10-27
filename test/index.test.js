@@ -11,12 +11,20 @@ const chars = {
 };
 
 describe("html-es6cape", () => {
-	it("should coerce the argument to a String", () => {
+	it("should coerce the argument to a String (if not null or undefined)", () => {
 		expect(htmlEscape(true)).to.equal("true");
 		expect(htmlEscape(27)).to.equal("27");
 		expect(htmlEscape("string")).to.equal("string");
-		expect(htmlEscape(null)).to.equal("null");
-		expect(htmlEscape(undefined)).to.equal("undefined");
+
+		expect(htmlEscape(null)).to.not.equal("null");
+		expect(htmlEscape(undefined)).to.not.equal("undefined");
+		expect(htmlEscape()).to.not.equal("undefined");
+	});
+
+	it("should return an empty string if null or undefined", () => {
+		expect(htmlEscape()).to.equal("");
+		expect(htmlEscape(null)).to.equal("");
+		expect(htmlEscape(undefined)).to.equal("");
 	});
 
 	Object.keys(chars).forEach((key) => {	

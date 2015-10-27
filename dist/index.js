@@ -19,9 +19,9 @@ var re = new RegExp(Object.keys(chars).join("|"), "g");
 // Return the escaped string
 
 exports["default"] = function (str) {
-	return String(str).replace(re, function (match) {
+	return str != null ? String(str).replace(re, function (match) {
 		return chars[match];
-	});
+	}) : "";
 };
 
 module.exports = exports["default"];
