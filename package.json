@@ -8,6 +8,7 @@
     "build": "babel src/index.js -o dist/index.js",
     "clean": "rm -rf dist && mkdir dist",
     "coverage:check": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "coverage:report": "cat ./coverage/lcov.info | codecov",
     "test": "istanbul cover -x *.test.js _mocha -- -R spec --compilers js:babel/register",
     "test:watch": "mocha -w --compilers js:babel/register"
   },
@@ -28,6 +29,7 @@
   "devDependencies": {
     "babel": "^5.8.29",
     "chai": "^3.4.0",
+    "codecov.io": "^0.1.6",
     "istanbul": "^0.4.0",
     "mocha": "^2.3.3"
   }
