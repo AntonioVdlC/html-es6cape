@@ -13,7 +13,7 @@
     "test": "istanbul cover -x *.test.js _mocha -- -R spec --compilers js:babel/register",
     "test:watch": "mocha -w --compilers js:babel/register",
     "preversion": "npm run test && npm run coverage:check",
-    "version": "npm run build",
+    "version": "npm run build && git add -A dist",
     "postversion": "git push && git push --tags"
   },
   "repository": {
