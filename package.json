@@ -1,6 +1,6 @@
 {
   "name": "html-es6cape",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Escape HTML special characters (including `)",
   "main": "dist/index.js",
   "scripts": {
