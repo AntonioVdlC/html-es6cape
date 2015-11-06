@@ -16,14 +16,12 @@ describe("html-es6cape", () => {
 		expect(htmlEscape(27)).to.equal("27");
 		expect(htmlEscape("string")).to.equal("string");
 
-		expect(htmlEscape(null)).to.not.equal("null");
 		expect(htmlEscape(undefined)).to.not.equal("undefined");
 		expect(htmlEscape()).to.not.equal("undefined");
 	});
 
 	it("should return an empty string if null or undefined", () => {
 		expect(htmlEscape()).to.equal("");
-		expect(htmlEscape(null)).to.equal("");
 		expect(htmlEscape(undefined)).to.equal("");
 	});
 
