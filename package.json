@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "Escape HTML special characters (including `)",
   "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
     "prebuild": "npm run clean",
     "build": "babel src/index.js -o dist/index.js",
