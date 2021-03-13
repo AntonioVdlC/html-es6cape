@@ -1,8 +1,6 @@
 # html-es6cape
 
 [![version](https://img.shields.io/npm/v/html-es6cape.svg)](http://npm.im/html-es6cape)
-[![Travis](https://img.shields.io/travis/AntonioVdlC/html-es6cape.svg?branch=master)](https://travis-ci.org/AntonioVdlC/html-es6cape)
-[![Codecov](https://img.shields.io/codecov/c/github/AntonioVdlC/html-es6cape.svg)](https://codecov.io/github/AntonioVdlC/html-es6cape)
 [![issues](https://img.shields.io/github/issues-raw/antoniovdlc/html-es6cape.svg)](https://github.com/AntonioVdlC/html-es6cape/issues)
 [![downloads](https://img.shields.io/npm/dt/html-es6cape.svg)](http://npm.im/html-es6cape)
 [![license](https://img.shields.io/npm/l/html-es6cape.svg)](http://opensource.org/licenses/MIT)
@@ -17,10 +15,6 @@ This package is distributed via npm:
 ```
 npm install html-es6cape
 ```
-
-*- or -*
-
-Download the file `src/index.js` and add it to your ES6 project.
 
 ## Usage
 
