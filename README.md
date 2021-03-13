@@ -19,21 +19,30 @@ npm install html-es6cape
 ## Usage
 
 ```javascript
-var htmlEscape = require("html-es6cape");
+const { escape } = require("html-es6cape");
 
 var unescapedString = `This is an evil unescaped string <"'&'">! #whoopwhoop`;
-var escapedString = htmlEscape(unescapedString);
-// "This is a nice escaped String &lt;&quot;&#39;&amp;&#39;&quot;&gt;! #whoopwhoop"
+var escapedString = escape(unescapedString);
+// "This is a nice escaped string &lt;&quot;&#39;&amp;&#39;&quot;&gt;! #whoopwhoop"
 ```
 
 *- or -*
 
 ```javascript
-import htmlEscape from "html-es6cape";
+import { escape } from "html-es6cape";
 
 var unescapedString = `This is an evil unescaped string <"'&'">! #whoopwhoop`;
-var escapedString = htmlEscape(unescapedString);
-// "This is a nice escaped String &lt;&quot;&#39;&amp;&#39;&quot;&gt;! #whoopwhoop"
+var escapedString = escape(unescapedString);
+// "This is a nice escaped string &lt;&quot;&#39;&amp;&#39;&quot;&gt;! #whoopwhoop"
+```
+
+*- or -*
+
+```javascript
+import { escape } from "html-es6cape";
+
+var escapedString = escape`This is an evil unescaped string <"'&'">! #whoopwhoop`;
+// "This is a nice escaped string &lt;&quot;&#39;&amp;&#39;&quot;&gt;! #whoopwhoop"
 ```
 
 ## License

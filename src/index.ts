@@ -12,4 +12,9 @@ const chars: Record<string, string> = {
 const re = new RegExp(Object.keys(chars).join("|"), "g");
 
 // Return the escaped string
-export default (str = "") => String(str).replace(re, (match) => chars[match]);
+function escape(str: string = ""): string {
+  return String(str).replace(re, (match) => chars[match]);
+}
+
+export { chars, escape };
+export default escape;
