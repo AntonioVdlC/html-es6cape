@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "type:check": "tsc --noEmit",
-    "format": "prettier --write --ignore-unknown **/*.{js,ts}",
-    "format:check": "prettier --check **/*.{js,ts}",
+    "format": "prettier --write --ignore-unknown {src,test}/*",
+    "format:check": "prettier --check {src,test}/*",
     "test": "jest",
     "prebuild": "rimraf dist && mkdir dist",
     "build": "npm run build:declaration && npm run build:esm && npm run build:cjs",
