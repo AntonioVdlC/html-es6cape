@@ -1,4 +1,5 @@
-import { chars, escape } from "../src/index.ts";
+import chars from "../src/chars.ts";
+import escape from "../src/index.ts";
 
 describe("html-es6cape", () => {
   it("should coerce the argument to a String (if not null or undefined)", () => {

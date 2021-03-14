@@ -19,7 +19,7 @@ npm install html-es6cape
 ## Usage
 
 ```javascript
-const { escape } = require("html-es6cape");
+const escape = require("html-es6cape");
 
 var unescapedString = `This is an evil unescaped string <"'&'">! #whoopwhoop`;
 var escapedString = escape(unescapedString);
@@ -29,7 +29,7 @@ var escapedString = escape(unescapedString);
 *- or -*
 
 ```javascript
-import { escape } from "html-es6cape";
+import escape from "html-es6cape";
 
 var unescapedString = `This is an evil unescaped string <"'&'">! #whoopwhoop`;
 var escapedString = escape(unescapedString);
@@ -39,7 +39,7 @@ var escapedString = escape(unescapedString);
 *- or -*
 
 ```javascript
-import { escape } from "html-es6cape";
+import escape from "html-es6cape";
 
 var escapedString = escape`This is an evil unescaped string <"'&'">! #whoopwhoop`;
 // "This is a nice escaped string &lt;&quot;&#39;&amp;&#39;&quot;&gt;! #whoopwhoop"
