@@ -6,7 +6,9 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/*"
+    "dist/index.cjs.js",
+    "dist/index.esm.js",
+    "dist/index.d.ts"
   ],
   "scripts": {
     "prepare": "husky install",
