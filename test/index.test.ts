@@ -1,9 +1,13 @@
-import chars from "../src/chars.ts";
-import escape from "../src/index.ts";
+import { describe, it, expect } from "vitest";
+
+import chars from "../src/chars";
+import escape from "../src/index";
 
 describe("html-es6cape", () => {
   it("should coerce the argument to a String (if not null or undefined)", () => {
+    //@ts-expect-error
     expect(escape(true)).toEqual("true");
+    //@ts-expect-error
     expect(escape(27)).toEqual("27");
     expect(escape("string")).toEqual("string");
 

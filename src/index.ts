@@ -4,7 +4,7 @@ import chars from "./chars";
 const re = new RegExp(Object.keys(chars).join("|"), "g");
 
 // Return the escaped string
-function escape(str: string = ""): string {
+function escape(str: string | TemplateStringsArray = ""): string {
   return String(str).replace(re, (match) => chars[match]);
 }
 
